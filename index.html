@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Erste GitHub Webseite</title>
+    <!-- Tailwind CSS CDN für einfaches Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Globale Schriftart */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-8 rounded-xl shadow-2xl text-center max-w-md w-full transform transition-all duration-500 hover:scale-105">
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-6 animate-fade-in-down">
+            Hallo Welt! Das ist meine erste Webseite.
+        </h1>
+        <p class="text-lg text-gray-700 mb-8 animate-fade-in-up">
+            Ein einfaches Beispiel, um GitHub Pages zu testen.
+        </p>
+        <img
+            src="https://placehold.co/600x400/FFD700/000000?text=Dein+Bild+Hier"
+            alt="Ein Platzhalterbild"
+            class="w-full h-auto rounded-lg shadow-md mb-6 border-4 border-blue-300 transform transition-all duration-300 hover:shadow-xl hover:border-purple-400"
+            onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/000000?text=Bild+nicht+gefunden';"
+        >
+        <div class="text-sm text-gray-500">
+            Dieses Bild ist ein Platzhalter. Du kannst es durch dein eigenes Bild ersetzen!
+        </div>
+    </div>
+
+    <!-- Einfache CSS-Animationen für einen netten Effekt -->
+    <style>
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-down {
+            animation: fadeInDown 1s ease-out forwards;
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+            animation-delay: 0.5s; /* Verzögerung für den zweiten Text */
+        }
+    </style>
+</body>
+</html>
